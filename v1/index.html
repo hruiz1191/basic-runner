@@ -1,0 +1,32 @@
+<!-- v1 final -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Runner v1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Basic Runner v1</h1>
+
+    <!-- Área para escribir el código BASIC -->
+    <textarea id="codeArea" rows="8" placeholder="Escribe tu código BASIC aquí..."></textarea>
+
+    <!-- Botones para ejecutar y limpiar -->
+    <button onclick="runCode()">Ejecutar</button>
+    <button onclick="clearCode()">Limpiar</button>
+    <button onclick="saveCode()">💾 Guardar</button>
+    <button onclick="loadCode()">📂 Cargar</button>
+
+    <!-- Canvas donde se muestra TODO (texto + gráficos) -->
+    <canvas id="basicCanvas" width="400" height="400"></canvas>
+
+    <!-- Conexión de scripts -->
+    <script src="scripts/parser.js"></script>
+    <script src="scripts/sound.js"></script>
+    <script src="scripts/executor.js"></script>
+    <script src="scripts/graphics.js"></script>
+    <script src="scripts/basic_interpreter.js"></script>
+</body>
+</html>
